@@ -1,14 +1,3 @@
-const carousalHelpers = {
-  setStyle: (element, styleObj) => {
-    const styleString = Object.entries(styleObj).reduce(
-      (cssText, [property, value]) => `${property}:${value};${cssText}`,
-      ''
-    );
-
-    element.style = styleString;
-  }
-}
-
 const carousalContainer = document.querySelector('[data-carousal]')
 carousalContainer.classList.add('carousal-container');
 
