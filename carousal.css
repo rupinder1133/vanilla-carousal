@@ -1,0 +1,25 @@
+.carousal-container {
+  width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousal-item {
+  width: 1000px;
+  display: none;
+  position: absolute;
+  transition: left 1s;
+}
+
+.carousal-item.left {
+  display: block;
+  left: -1000px;
+}
+.carousal-item.active {
+  display: block;
+  left: 0;
+}
+.carousal-item.right {
+  display: block;
+  left: 1000px;
+}
